@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Epidemiology | A Minimal Book Example</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Epidemiology | A Minimal Book Example" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Epidemiology | A Minimal Book Example" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="John Doe" />
+
+
+<meta name="date" content="2022-09-14" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="korea-summer-session-on-causal-inference-2021.html"/>
+<link rel="next" href="jama.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a></li>
+<li class="chapter" data-level="2" data-path="section.html"><a href="section.html"><i class="fa fa-check"></i><b>2</b> 2022</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="section.html"><a href="section.html#boot-camp-for-beginners"><i class="fa fa-check"></i><b>2.1</b> Boot Camp for Beginners</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="section.html"><a href="section.html#what-is-causal-inference"><i class="fa fa-check"></i><b>2.1.1</b> What is Causal Inference?</a></li>
+<li class="chapter" data-level="2.1.2" data-path="section.html"><a href="section.html#potential-outcome-framework-regression-and-matching"><i class="fa fa-check"></i><b>2.1.2</b> Potential Outcome Framework, Regression, and Matching</a></li>
+<li class="chapter" data-level="2.1.3" data-path="section.html"><a href="section.html#quasi-experiments"><i class="fa fa-check"></i><b>2.1.3</b> Quasi-Experiments</a></li>
+<li class="chapter" data-level="2.1.4" data-path="section.html"><a href="section.html#instrumental-variable-and-regression-discontinuity"><i class="fa fa-check"></i><b>2.1.4</b> Instrumental Variable and Regression Discontinuity</a></li>
+<li class="chapter" data-level="2.1.5" data-path="section.html"><a href="section.html#causal-graph-and-structural-causal-model"><i class="fa fa-check"></i><b>2.1.5</b> Causal Graph and Structural Causal Model</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="section.html"><a href="section.html#health-informatics-marketing"><i class="fa fa-check"></i><b>2.2</b> Health Informatics &amp; Marketing</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="section.html"><a href="section.html#heterogeneous-treatment-effect-estimation-using-machine-learning---application-to-healthcare-data"><i class="fa fa-check"></i><b>2.2.1</b> Heterogeneous Treatment Effect Estimation Using Machine Learning - Application to Healthcare Data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html"><i class="fa fa-check"></i><b>3</b> Korea Summer Session on Causal Inference 2021</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-introduction"><i class="fa fa-check"></i><b>3.1</b> Session Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#module-1.-research-design-for-causal-inference"><i class="fa fa-check"></i><b>3.2</b> Module 1. Research Design for Causal Inference</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-1.-potential-outcomes-framework-causal-mindset"><i class="fa fa-check"></i><b>3.2.1</b> Session 1. Potential Outcomes Framework: Causal Mindset</a></li>
+<li class="chapter" data-level="3.2.2" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-2.-overview-of-research-design-for-causal-inference"><i class="fa fa-check"></i><b>3.2.2</b> Session 2. Overview of Research Design for Causal Inference</a></li>
+<li class="chapter" data-level="3.2.3" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-7.-graphical-model-of-causal-relationships"><i class="fa fa-check"></i><b>3.2.3</b> Session 7. Graphical Model of Causal Relationships</a></li>
+<li class="chapter" data-level="3.2.4" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-9.-instrumental-variables"><i class="fa fa-check"></i><b>3.2.4</b> Session 9. Instrumental Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#module-2.-machine-learning-for-causal-inference"><i class="fa fa-check"></i><b>3.3</b> Module 2. Machine Learning for Causal Inference</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-11.-overview-of-machine-learning-for-causal-inference"><i class="fa fa-check"></i><b>3.3.1</b> Session 11. Overview of Machine Learning for Causal Inference</a></li>
+<li class="chapter" data-level="3.3.2" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-13.-causal-applications-of-machine-learning-models"><i class="fa fa-check"></i><b>3.3.2</b> Session 13. Causal Applications of Machine Learning Models</a></li>
+<li class="chapter" data-level="3.3.3" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-14.-heterogeneous-treatment-effect-estimation-using-machine-learning"><i class="fa fa-check"></i><b>3.3.3</b> Session 14. Heterogeneous Treatment Effect Estimation Using Machine Learning</a></li>
+<li class="chapter" data-level="3.3.4" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-15.-causal-decision-making-and-prescriptive-analytics"><i class="fa fa-check"></i><b>3.3.4</b> Session 15. Causal Decision Making and Prescriptive Analytics</a></li>
+<li class="chapter" data-level="3.3.5" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-16.-causal-inference-under-the-rubric-of-structural-causal-model"><i class="fa fa-check"></i><b>3.3.5</b> Session 16. Causal Inference under the Rubric of Structural Causal Model</a></li>
+<li class="chapter" data-level="3.3.6" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-18.-synthetic-control-causal-discovery"><i class="fa fa-check"></i><b>3.3.6</b> Session 18. Synthetic Control / Causal Discovery</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="epidemiology.html"><a href="epidemiology.html"><i class="fa fa-check"></i><b>4</b> Epidemiology</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="epidemiology.html"><a href="epidemiology.html#약물역학pharmacoepidemiology이란"><i class="fa fa-check"></i><b>4.1</b> 약물역학(Pharmacoepidemiology)이란?</a></li>
+<li class="chapter" data-level="4.2" data-path="epidemiology.html"><a href="epidemiology.html#atcddd"><i class="fa fa-check"></i><b>4.2</b> ATC/DDD</a></li>
+<li class="chapter" data-level="4.3" data-path="epidemiology.html"><a href="epidemiology.html#deep-learning-for-survival-analysis"><i class="fa fa-check"></i><b>4.3</b> Deep learning for survival analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="jama.html"><a href="jama.html"><i class="fa fa-check"></i><b>5</b> JAMA</a></li>
+<li class="chapter" data-level="6" data-path="blocks.html"><a href="blocks.html"><i class="fa fa-check"></i><b>6</b> Blocks</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="blocks.html"><a href="blocks.html#equations"><i class="fa fa-check"></i><b>6.1</b> Equations</a></li>
+<li class="chapter" data-level="6.2" data-path="blocks.html"><a href="blocks.html#theorems-and-proofs"><i class="fa fa-check"></i><b>6.2</b> Theorems and proofs</a></li>
+<li class="chapter" data-level="6.3" data-path="blocks.html"><a href="blocks.html#callout-blocks"><i class="fa fa-check"></i><b>6.3</b> Callout blocks</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="sharing-your-book.html"><a href="sharing-your-book.html"><i class="fa fa-check"></i><b>7</b> Sharing your book</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="sharing-your-book.html"><a href="sharing-your-book.html#publishing"><i class="fa fa-check"></i><b>7.1</b> Publishing</a></li>
+<li class="chapter" data-level="7.2" data-path="sharing-your-book.html"><a href="sharing-your-book.html#pages"><i class="fa fa-check"></i><b>7.2</b> 404 pages</a></li>
+<li class="chapter" data-level="7.3" data-path="sharing-your-book.html"><a href="sharing-your-book.html#metadata-for-sharing"><i class="fa fa-check"></i><b>7.3</b> Metadata for sharing</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="epidemiology" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Epidemiology<a href="epidemiology.html#epidemiology" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="약물역학pharmacoepidemiology이란" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> 약물역학(Pharmacoepidemiology)이란?<a href="epidemiology.html#약물역학pharmacoepidemiology이란" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>인구집단에서 약물의 사용으로 인하여 발생하는 이롭거나 해로운 결과의 빈도를 파악하고 특정 약물복용과 질병발생 간의 관련성을 분석하는 데 역학적인 지식과 연구방법론을 적용하는 학문</p></li>
+<li><p>약물역학의 필요성</p>
+<ul>
+<li>시판 전 임상시험의 한계점 (“Six Tools”)
+<ul>
+<li>Two Few (study subjects)</li>
+<li>Too Simple (design)</li>
+<li>Too Median-aged (population)</li>
+<li>Too Brief (period of observation time)</li>
+<li>Too Narrow (range of exposure)</li>
+<li>Too Indirect (surrogate vs desired endpoint)</li>
+</ul></li>
+<li>Pharmacosurveillance</li>
+</ul></li>
+</ul>
+<center>
+<img src="figures/61.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li><p><strong>Real-World data (RWD, 실사용데이터)</strong>: 전통적인 임상연구가 아닌 다양한 자료원으로부터 수집되는 환자 건강상태 또는 보건의료 전달체계와 관련된 데이터</p></li>
+<li><p><strong>Real-World Evidence (RWE, 실사용증거)</strong>: RWD의 분석을 통해 얻은 의료제품의 잠재적인 유익성과 위해성 및 사용법에 대한 임상 근거</p></li>
+<li><p><strong>약물역학 예제</strong></p>
+<center>
+<p><img src="figures/62.PNG" /></p>
+</center>
+<p><br></p>
+<center>
+<p><img src="figures/63.PNG" /></p>
+</center>
+<p><br></p>
+<center>
+<p><img src="figures/64.PNG" /></p>
+</center>
+<p><br></p></li>
+<li><p>측정 불가능한 교란요인 관련</p>
+<ul>
+<li>Negative control analysis
+<center>
+<img src="figures/65.PNG" />
+</center>
+<br><br />
+</li>
+<li>Rule-out approach
+<center>
+<img src="figures/66.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/67.PNG" />
+</center>
+<br></li>
+</ul></li>
+<li><p>선택적 비뚤림 관련</p>
+<ul>
+<li><p>Quantitative bias analysis</p>
+<center>
+<p><img src="figures/68.PNG" /></p>
+</center>
+<p><br></p>
+<center>
+<p><img src="figures/69.PNG" /></p>
+</center>
+<p><br></p>
+<center>
+<p><img src="figures/70.PNG" /></p>
+</center>
+<p><br></p></li>
+<li><p><a href="https://cran.r-project.org/web/packages/episensr/vignettes/episensr.html" class="uri">https://cran.r-project.org/web/packages/episensr/vignettes/episensr.html</a></p></li>
+</ul></li>
+</ul>
+</div>
+<div id="atcddd" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> ATC/DDD<a href="epidemiology.html#atcddd" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>The <strong>Anatomical Therapeutic Chemical (ATC)</strong> classification system and the <strong>Defined Daily Dose (DDD)</strong> as a measuring unit have become the gold standard for international drug utilization monitoring and research.</p></li>
+<li><p>The ATC/DDD system is a tool for exchanging and comparing data on drug use at international, national or local levels.</p></li>
+<li><p>DDD는 성인을 대상으로 주요 적응증에 대해 사용된 의약품에 대하여가정된 일일 평균 유지 용량을 말한다.</p></li>
+<li><p><a href="https://apps.who.int/iris/bitstream/handle/10665/42627/924156234X_kor.pdf?sequence=17&amp;isAllowed=y" class="uri">https://apps.who.int/iris/bitstream/handle/10665/42627/924156234X_kor.pdf?sequence=17&amp;isAllowed=y</a></p></li>
+</ul>
+</div>
+<div id="deep-learning-for-survival-analysis" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Deep learning for survival analysis<a href="epidemiology.html#deep-learning-for-survival-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<center>
+<img src="figures/71.png" />
+</center>
+<br>
+<center>
+<img src="figures/72.png" />
+</center>
+<p><br></p>
+<ul>
+<li><p>The first is based on further development of the baseline Cox proportional hazards model: DeepSurv (section 5.1), Cox-nnet (extension of CoxPH on specific genetics datasets and regularizations).</p>
+<ul>
+<li>DeepSurv는 Faraggi-Simon 네트워크와 유사한 다층 퍼셉트론으로 Cox 비례위험 모델의 딥러닝 일반화를 구현한 것으로, 비선형적 비례위험 모델이다. DeepSurv는 공변량의 사전 선택이 필요하지 않지만 적응적으로 학습하므로 기존 Cox 회귀에 비해 이점 이 있다.</li>
+<li>Data에서 non-linear한 관계도 살펴보기 위해서 DeepSurv라는 모델을 제안했으며, DeepSurv는 risk function에 DNN을 사용하고 cox-partial likelihood의 변형을 주어 학습만 했는데 훨씬 좋은 성능을 보였다.</li>
+</ul></li>
+<li><p>As an alternative approach, fully parametric survival models which use RNN to sequentially predict a distribution over the time to the next event: RNN-SURV, Weibull Time-To-Event RNN etc.</p></li>
+<li><p>On the other hand, there are some new advanced deep learning neural networks, such as DeepHit, developed to also process the survival data with competing risks (section 5.2).</p></li>
+<li><p><a href="https://humboldt-wi.github.io/blog/research/information_systems_1920/group2_survivalanalysis/" class="uri">https://humboldt-wi.github.io/blog/research/information_systems_1920/group2_survivalanalysis/</a></p></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="korea-summer-session-on-causal-inference-2021.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="jama.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-parts.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

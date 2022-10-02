@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 2022 | A Minimal Book Example</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 2022 | A Minimal Book Example" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 2022 | A Minimal Book Example" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="John Doe" />
+
+
+<meta name="date" content="2022-10-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="korea-summer-session-on-causal-inference-2021.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About</a></li>
+<li class="chapter" data-level="2" data-path="section.html"><a href="section.html"><i class="fa fa-check"></i><b>2</b> 2022</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="section.html"><a href="section.html#boot-camp-for-beginners"><i class="fa fa-check"></i><b>2.1</b> Boot Camp for Beginners</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="section.html"><a href="section.html#what-is-causal-inference"><i class="fa fa-check"></i><b>2.1.1</b> What is Causal Inference?</a></li>
+<li class="chapter" data-level="2.1.2" data-path="section.html"><a href="section.html#potential-outcome-framework-regression-and-matching"><i class="fa fa-check"></i><b>2.1.2</b> Potential Outcome Framework, Regression, and Matching</a></li>
+<li class="chapter" data-level="2.1.3" data-path="section.html"><a href="section.html#quasi-experiments"><i class="fa fa-check"></i><b>2.1.3</b> Quasi-Experiments</a></li>
+<li class="chapter" data-level="2.1.4" data-path="section.html"><a href="section.html#instrumental-variable-and-regression-discontinuity"><i class="fa fa-check"></i><b>2.1.4</b> Instrumental Variable and Regression Discontinuity</a></li>
+<li class="chapter" data-level="2.1.5" data-path="section.html"><a href="section.html#causal-graph-and-structural-causal-model"><i class="fa fa-check"></i><b>2.1.5</b> Causal Graph and Structural Causal Model</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="section.html"><a href="section.html#health-informatics-marketing"><i class="fa fa-check"></i><b>2.2</b> Health Informatics &amp; Marketing</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="section.html"><a href="section.html#heterogeneous-treatment-effect-estimation-using-machine-learning---application-to-healthcare-data"><i class="fa fa-check"></i><b>2.2.1</b> Heterogeneous Treatment Effect Estimation Using Machine Learning - Application to Healthcare Data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html"><i class="fa fa-check"></i><b>3</b> Korea Summer Session on Causal Inference 2021</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-introduction"><i class="fa fa-check"></i><b>3.1</b> Session Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#module-1.-research-design-for-causal-inference"><i class="fa fa-check"></i><b>3.2</b> Module 1. Research Design for Causal Inference</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-1.-potential-outcomes-framework-causal-mindset"><i class="fa fa-check"></i><b>3.2.1</b> Session 1. Potential Outcomes Framework: Causal Mindset</a></li>
+<li class="chapter" data-level="3.2.2" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-2.-overview-of-research-design-for-causal-inference"><i class="fa fa-check"></i><b>3.2.2</b> Session 2. Overview of Research Design for Causal Inference</a></li>
+<li class="chapter" data-level="3.2.3" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-7.-graphical-model-of-causal-relationships"><i class="fa fa-check"></i><b>3.2.3</b> Session 7. Graphical Model of Causal Relationships</a></li>
+<li class="chapter" data-level="3.2.4" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-9.-instrumental-variables"><i class="fa fa-check"></i><b>3.2.4</b> Session 9. Instrumental Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#module-2.-machine-learning-for-causal-inference"><i class="fa fa-check"></i><b>3.3</b> Module 2. Machine Learning for Causal Inference</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-11.-overview-of-machine-learning-for-causal-inference"><i class="fa fa-check"></i><b>3.3.1</b> Session 11. Overview of Machine Learning for Causal Inference</a></li>
+<li class="chapter" data-level="3.3.2" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-13.-causal-applications-of-machine-learning-models"><i class="fa fa-check"></i><b>3.3.2</b> Session 13. Causal Applications of Machine Learning Models</a></li>
+<li class="chapter" data-level="3.3.3" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-14.-heterogeneous-treatment-effect-estimation-using-machine-learning"><i class="fa fa-check"></i><b>3.3.3</b> Session 14. Heterogeneous Treatment Effect Estimation Using Machine Learning</a></li>
+<li class="chapter" data-level="3.3.4" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-15.-causal-decision-making-and-prescriptive-analytics"><i class="fa fa-check"></i><b>3.3.4</b> Session 15. Causal Decision Making and Prescriptive Analytics</a></li>
+<li class="chapter" data-level="3.3.5" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-16.-causal-inference-under-the-rubric-of-structural-causal-model"><i class="fa fa-check"></i><b>3.3.5</b> Session 16. Causal Inference under the Rubric of Structural Causal Model</a></li>
+<li class="chapter" data-level="3.3.6" data-path="korea-summer-session-on-causal-inference-2021.html"><a href="korea-summer-session-on-causal-inference-2021.html#session-18.-synthetic-control-causal-discovery"><i class="fa fa-check"></i><b>3.3.6</b> Session 18. Synthetic Control / Causal Discovery</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="etc..html"><a href="etc..html"><i class="fa fa-check"></i><b>4</b> etc.</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="etc..html"><a href="etc..html#survival-analysis"><i class="fa fa-check"></i><b>4.1</b> Survival analysis</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="etc..html"><a href="etc..html#deep-learning-for-survival-analysis"><i class="fa fa-check"></i><b>4.1.1</b> Deep learning for survival analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="etc..html"><a href="etc..html#confounding"><i class="fa fa-check"></i><b>4.2</b> Confounding</a></li>
+<li class="chapter" data-level="4.3" data-path="etc..html"><a href="etc..html#atcddd"><i class="fa fa-check"></i><b>4.3</b> ATC/DDD</a></li>
+<li class="chapter" data-level="4.4" data-path="etc..html"><a href="etc..html#meditation-analysis"><i class="fa fa-check"></i><b>4.4</b> Meditation analysis</a></li>
+<li class="chapter" data-level="4.5" data-path="etc..html"><a href="etc..html#약물역학pharmacoepidemiology이란"><i class="fa fa-check"></i><b>4.5</b> 약물역학(Pharmacoepidemiology)이란?</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="jama-stat.html"><a href="jama-stat.html"><i class="fa fa-check"></i><b>5</b> JAMA STAT</a></li>
+<li class="chapter" data-level="6" data-path="blocks.html"><a href="blocks.html"><i class="fa fa-check"></i><b>6</b> Blocks</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="blocks.html"><a href="blocks.html#equations"><i class="fa fa-check"></i><b>6.1</b> Equations</a></li>
+<li class="chapter" data-level="6.2" data-path="blocks.html"><a href="blocks.html#theorems-and-proofs"><i class="fa fa-check"></i><b>6.2</b> Theorems and proofs</a></li>
+<li class="chapter" data-level="6.3" data-path="blocks.html"><a href="blocks.html#callout-blocks"><i class="fa fa-check"></i><b>6.3</b> Callout blocks</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="sharing-your-book.html"><a href="sharing-your-book.html"><i class="fa fa-check"></i><b>7</b> Sharing your book</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="sharing-your-book.html"><a href="sharing-your-book.html#publishing"><i class="fa fa-check"></i><b>7.1</b> Publishing</a></li>
+<li class="chapter" data-level="7.2" data-path="sharing-your-book.html"><a href="sharing-your-book.html#pages"><i class="fa fa-check"></i><b>7.2</b> 404 pages</a></li>
+<li class="chapter" data-level="7.3" data-path="sharing-your-book.html"><a href="sharing-your-book.html#metadata-for-sharing"><i class="fa fa-check"></i><b>7.3</b> Metadata for sharing</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="section" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> 2022<a href="section.html#section" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="boot-camp-for-beginners" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Boot Camp for Beginners<a href="section.html#boot-camp-for-beginners" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="what-is-causal-inference" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> What is Causal Inference?<a href="section.html#what-is-causal-inference" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="potential-outcome-framework-regression-and-matching" class="section level3 hasAnchor" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Potential Outcome Framework, Regression, and Matching<a href="section.html#potential-outcome-framework-regression-and-matching" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>In some special cases, conditioning may not work as it causes other backdoor paths to open. In this case, weighting methods can be used.</li>
+</ul>
+<center>
+<img src="figures/01.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/02.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/03.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/22.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li>Selection on observables does not guarantee the balance of unobserved covariates.</li>
+<li>Selection on observables strategies should be considered the last resort for causal inference, as it is quite challenging to account for unobserved variables by using only observed variables.</li>
+<li>Control variables, matching, or weighting are still helpful in making randomized controlled trials or quasi-experiments more rigorous. It is more common to utilize control variables, matching, or weighting in tandem with other experimental methods, rather than in isolation.</li>
+<li><em>Ceteris Paribus</em> in the presence of control variables, matching, or weighting
+<ul>
+<li>The control group should be comparable to the treatment group in all aspects, except control variables, but the fact that they are treated.</li>
+</ul></li>
+</ul>
+</div>
+<div id="quasi-experiments" class="section level3 hasAnchor" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Quasi-Experiments<a href="section.html#quasi-experiments" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Quasi-experiment = Research Designs without random assignment
+<ul>
+<li>The only difference between RCT and quasi-experiment lies at the treatment assignment mechanism.</li>
+</ul></li>
+<li>Quasi-experiment is a research design where a control group is comparable to the treatment, not randomly assigned, except the fact that they didn’t receive the treatment.
+<ul>
+<li>Key Identification Assumption
+<ul>
+<li>Is the treatment assignment without random assignment as good as random?</li>
+<li>How similar is the control group to the treatment group is the absence of the treatment?</li>
+</ul></li>
+</ul></li>
+<li>Causation is defined as the difference in potential outcomes after the treatment.
+<ul>
+<li>Causal effect = (Actual outcome for treated if treated) – (Potential outcome for treated if not treated) = <em>Counterfactual</em></li>
+</ul></li>
+</ul>
+<center>
+<img src="figures/23.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li><p>Data Structure from the Perspective of Counterfactual</p>
+<center>
+<p><img src="figures/24.PNG" /></p>
+</center>
+<p><br></p></li>
+<li><p>What’s Your Research Design and Data Structure?</p>
+<center>
+<p><img src="figures/25.PNG" /></p>
+</center>
+<p><br></p></li>
+<li><p>Difference-in-Differences</p>
+<ul>
+<li>With panel data, DID approximates the counterfactual using its own prior and time trends of the control group.</li>
+<li>For DID analysis, the parallel trend assumption (in the absence of treatment) must be hold.
+<ul>
+<li>Basically, the parallel trend assumption is not verifiable, and what we can show is parallel pretrends.</li>
+<li>Matching methods might help to achieve the parallel trend assumption.</li>
+</ul></li>
+</ul></li>
+</ul>
+<center>
+<img src="figures/26.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/31.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li>Synthetic Control
+<ul>
+<li>With panel data, SC approximates the counterfactual using a combination of the control group.</li>
+<li>Synthetic control method is in line with difference-in-differences in that they approximate the counterfactual using untreated units in the control group.</li>
+</ul></li>
+</ul>
+<center>
+<img src="figures/27.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/32.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li><p>Synthetic Control vs. Difference-in-Differences</p>
+<center>
+<p><img src="figures/28.PNG" /></p>
+</center>
+<p><br></p>
+<center>
+<p><img src="figures/29.PNG" /></p>
+</center>
+<p><br></p></li>
+<li><p>Interrupted Time-Series Analysis</p>
+<ul>
+<li>With pure time-series data, interrupted time-series analysis approximates the counterfactual using its own prior and time trends.</li>
+<li>In the case of no control group, time-series forecasting models can be used to predict the counterfactual.</li>
+<li>See <strong>CausalImpact</strong> R package</li>
+</ul></li>
+</ul>
+<center>
+<img src="figures/30.PNG" />
+</center>
+<p><br></p>
+</div>
+<div id="instrumental-variable-and-regression-discontinuity" class="section level3 hasAnchor" number="2.1.4">
+<h3><span class="header-section-number">2.1.4</span> Instrumental Variable and Regression Discontinuity<a href="section.html#instrumental-variable-and-regression-discontinuity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><p>To interpret the regression in a causal manner, the treatment variable should not be correlated with the error term capturing all unobserved factors that could influence the outcome variable.</p></li>
+<li><p>Instrumental variable (IV) is an instrument to separate the exogenous portion of the treatment variable from the endogenous portion (selection bias).</p>
+<ul>
+<li><ol style="list-style-type: decimal">
+<li>The IVs should be correlated with the endogenous treatment variable (relevance).</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: decimal">
+<li>The IVs should not be correlated with the error term in the explanatory equation.</li>
+</ol>
+<ul>
+<li>Exclusion restriction: The IVs do not affect the outcome except through the treatment variable.</li>
+<li>Exogeneity of IV: The IVs do not share any confounders with the outcome.</li>
+</ul></li>
+</ul></li>
+</ul>
+<center>
+<img src="figures/33.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li>Regression Discontinuity (RD)
+<ul>
+<li>Regression discontinuity is to identify the local discontinuous jump on a running (assignment) variable.</li>
+<li>The estimation of treatment effect in RD depends on extrapolation based on a running variable (dashed line).</li>
+</ul></li>
+</ul>
+<center>
+<img src="figures/34.PNG" />
+</center>
+<p><br></p>
+</div>
+<div id="causal-graph-and-structural-causal-model" class="section level3 hasAnchor" number="2.1.5">
+<h3><span class="header-section-number">2.1.5</span> Causal Graph and Structural Causal Model<a href="section.html#causal-graph-and-structural-causal-model" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Directed Acyclic Graph (DAG)
+<ul>
+<li>Graph: A structure made from nodes and edges</li>
+<li>Directed: Direction represents a causal relationship between nodes</li>
+<li>Acyclic: No directed cycles</li>
+</ul></li>
+</ul>
+<center>
+<img src="figures/35.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li>Association in Causal Graph</li>
+</ul>
+<center>
+<img src="figures/36.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/37.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/38.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/39.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li>Applications of Causal Graph for Design-Based Approach
+<ul>
+<li><ol style="list-style-type: decimal">
+<li>Structure-Based Research Design</li>
+</ol></li>
+</ul></li>
+</ul>
+<center>
+<img src="figures/40.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/41.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/42.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/43.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/44.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/45.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/46.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li><ol start="2" style="list-style-type: decimal">
+<li>Design of Control Variables / Conditioning Strategies</li>
+</ol></li>
+</ul>
+<center>
+<img src="figures/47.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/48.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/49.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li><ol start="3" style="list-style-type: decimal">
+<li>Communicating Identification Assumptions</li>
+</ol></li>
+<li><ol start="4" style="list-style-type: decimal">
+<li>Transportability: From RCTs to Observational Studies</li>
+</ol></li>
+<li>Structural Causal Model = Probabilistic Causal Mechanisms</li>
+</ul>
+</div>
+</div>
+<div id="health-informatics-marketing" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Health Informatics &amp; Marketing<a href="section.html#health-informatics-marketing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="heterogeneous-treatment-effect-estimation-using-machine-learning---application-to-healthcare-data" class="section level3 hasAnchor" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Heterogeneous Treatment Effect Estimation Using Machine Learning - Application to Healthcare Data<a href="section.html#heterogeneous-treatment-effect-estimation-using-machine-learning---application-to-healthcare-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Developing a drug: “from the new” vs. “recycling”</li>
+</ul>
+<center>
+<img src="figures/04.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li>What is Randomized clinicaltrials (RCTs)?
+<ul>
+<li>“Gold standard” for testing treatments in people</li>
+<li>Test the treatment’s effectiveness by making a fair
+comparison</li>
+<li>Participants are divided by chance into separate groups
+<ul>
+<li>Treatment(s) group: receive a new treatment</li>
+<li>Placebo group: receive standard treatment</li>
+</ul></li>
+<li>Expensive, high failure rate, sometimes not safe
+<ul>
+<li>Emulate the RCTs using real-world observation!</li>
+</ul></li>
+</ul></li>
+<li>Emulate RCTs using real-world observation (For existing drugs)</li>
+</ul>
+<center>
+<img src="figures/05.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/06.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li>Challenge 1: Selection bias
+<ul>
+<li>Potential outcomes model</li>
+<li>Propensity score</li>
+<li>Average treatment effect</li>
+</ul></li>
+</ul>
+<center>
+<img src="figures/07.PNG" />
+</center>
+<br><br />
+
+<center>
+<img src="figures/08.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/09.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/10.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li>Challenge 2: Heterogeneity in treatment effect
+<ul>
+<li>Double machine learning</li>
+<li>Meta learners</li>
+<li>Balanced representation learning</li>
+</ul></li>
+</ul>
+<center>
+<img src="figures/11.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li>How to estimate the heterogeneous treatment effect?
+<ul>
+<li>High-level steps
+<ul>
+<li>Learn “nuisance” or “context” around feature X via regression</li>
+<li>Estimate the HTE by learning coefficient in semi-parametric structural equation model or imputing counterfactual outcomes</li>
+<li>Optionally weight the outcome estimate by propensity score</li>
+</ul></li>
+<li>Methods: double machine learning, meta learners, balanced representation learning, etc.</li>
+</ul></li>
+</ul>
+<center>
+<img src="figures/12.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li>Double Machine Learning (Chernozhukov 2016)</li>
+</ul>
+<center>
+<img src="figures/13.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li>Meta learners</li>
+</ul>
+<center>
+<img src="figures/14.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/15.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li>Balanced representation learning</li>
+</ul>
+<center>
+<img src="figures/16.PNG" />
+</center>
+<p><br></p>
+<ul>
+<li>Methodology comparison</li>
+</ul>
+<center>
+<img src="figures/17.PNG" />
+</center>
+<br>
+<center>
+<img src="figures/18.PNG" />
+</center>
+<br><br />
+
+<center>
+<img src="figures/19.PNG" />
+</center>
+<br><br />
+
+<center>
+<img src="figures/20.PNG" />
+</center>
+<br><br />
+
+<center>
+<img src="figures/21.PNG" />
+</center>
+<p><br></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="korea-summer-session-on-causal-inference-2021.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-intro.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

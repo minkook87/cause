@@ -1,0 +1,206 @@
+# 2022
+
+## Boot Camp for Beginners
+
+### What is Causal Inference?
+
+### Potential Outcome Framework, Regression, and Matching
+
+  - In some special cases, conditioning may not work as it causes other backdoor paths to open. In this case, weighting methods can be used.
+
+<center>![](figures/01.png)</center><br>
+<center>![](figures/02.png)</center><br>
+<center>![](figures/03.png)</center><br>
+<center>![](figures/22.png)</center><br>
+
+  - Selection on observables does not guarantee the balance of unobserved covariates.
+  - Selection on observables strategies should be considered the last resort for causal inference, as it is quite challenging to account for unobserved variables by using only observed variables.
+  - Control variables, matching, or weighting are still helpful in making randomized controlled trials or quasi-experiments more rigorous. It is more common to utilize control variables, matching, or weighting in tandem with other experimental methods, rather than in isolation.
+  - *Ceteris Paribus* in the presence of control variables, matching, or weighting
+    - The control group should be comparable to the treatment group in all aspects, except control variables, but the fact that they are treated.
+
+### Quasi-Experiments
+
+  - Quasi-experiment = Research Designs without random assignment
+    - The only difference between RCT and quasi-experiment lies at the treatment assignment mechanism.
+  - Quasi-experiment is a research design where a control group is comparable to the treatment, not randomly assigned, except the fact that they didn't receive the treatment.
+    - Key Identification Assumption
+      - Is the treatment assignment without random assignment as good as random?
+      - How similar is the control group to the treatment group is the absence of the treatment?
+  - Causation is defined as the difference in potential outcomes after the treatment.
+    - Causal effect = (Actual outcome for treated if treated) – (Potential outcome for treated if not treated) = *Counterfactual*
+
+<center>![](figures/23.png)</center><br>
+
+  - Data Structure from the Perspective of Counterfactual
+<center>![](figures/24.png)</center><br>
+
+  - What’s Your Research Design and Data Structure?
+<center>![](figures/25.png)</center><br>
+
+  - Difference-in-Differences
+    - With panel data, DID approximates the counterfactual using its own prior and time trends of the control group.
+    - For DID analysis, the parallel trend assumption (in the absence of treatment) must be hold. 
+      - Basically, the parallel trend assumption is not verifiable, and what we can show is parallel pretrends. 
+      - Matching methods might help to achieve the parallel trend assumption.
+    
+<center>![](figures/26.png)</center><br> 
+<center>![](figures/31.png)</center><br> 
+
+  - Synthetic Control
+    - With panel data, SC approximates the counterfactual using a combination of the control group.
+    - Synthetic control method is in line with difference-in-differences in that they approximate the counterfactual using untreated units in the control group.
+
+<center>![](figures/27.png)</center><br>
+<center>![](figures/32.png)</center><br> 
+
+  - Synthetic Control vs. Difference-in-Differences
+<center>![](figures/28.png)</center><br> 
+<center>![](figures/29.png)</center><br> 
+
+  - Interrupted Time-Series Analysis
+    - With pure time-series data, interrupted time-series analysis approximates the counterfactual using its own prior and time trends.
+    - In the case of no control group, time-series forecasting models can be used to predict the counterfactual.
+    - See **CausalImpact** R package
+
+<center>![](figures/30.png)</center><br>  
+
+### Instrumental Variable and Regression Discontinuity
+
+  - To interpret the regression in a causal manner, the treatment variable should not be correlated with the error term capturing all unobserved factors that could influence the outcome variable.
+  
+  - Instrumental variable (IV) is an instrument to separate the exogenous portion of the treatment variable from the endogenous portion (selection bias).
+    - (1) The IVs should be correlated with the endogenous treatment variable (relevance).
+    - (2) The IVs should not be correlated with the error term in the explanatory equation. 
+      - Exclusion restriction: The IVs do not affect the outcome except through the treatment variable.
+      - Exogeneity of IV: The IVs do not share any confounders with the outcome.
+
+<center>![](figures/33.png)</center><br>
+
+  - Regression Discontinuity (RD)
+    - Regression discontinuity is to identify the local discontinuous jump on a running (assignment) variable.
+    - The estimation of treatment effect in RD depends on extrapolation based on a running variable (dashed line).
+
+<center>![](figures/34.png)</center><br>
+
+### Causal Graph and Structural Causal Model
+
+  - Directed Acyclic Graph (DAG)
+    - Graph: A structure made from nodes and edges
+    - Directed: Direction represents a causal relationship between nodes
+    - Acyclic: No directed cycles
+  
+<center>![](figures/35.png)</center><br>
+  
+  - Association in Causal Graph
+  
+<center>![](figures/36.png)</center><br>
+<center>![](figures/37.png)</center><br>
+<center>![](figures/38.png)</center><br>
+<center>![](figures/39.png)</center><br> 
+
+  - Applications of Causal Graph for Design-Based Approach
+    - (1) Structure-Based Research Design
+
+<center>![](figures/40.png)</center><br>
+<center>![](figures/41.png)</center><br>
+<center>![](figures/42.png)</center><br> 
+<center>![](figures/43.png)</center><br> 
+<center>![](figures/44.png)</center><br>
+<center>![](figures/45.png)</center><br>
+<center>![](figures/46.png)</center><br>
+
+  - (2) Design of Control Variables / Conditioning Strategies
+
+<center>![](figures/47.png)</center><br>
+<center>![](figures/48.png)</center><br>
+<center>![](figures/49.png)</center><br>
+
+  - (3) Communicating Identification Assumptions
+  - (4) Transportability: From RCTs to Observational Studies
+
+  - Structural Causal Model = Probabilistic Causal Mechanisms
+
+## Health Informatics & Marketing
+
+### Heterogeneous Treatment Effect Estimation Using Machine Learning - Application to Healthcare Data
+
+  - Developing a drug: “from the new” vs. “recycling”
+
+<center>![](figures/04.png)</center><br>  
+  
+  - What is Randomized clinicaltrials (RCTs)?
+    - “Gold standard” for testing treatments in people
+    - Test the treatment’s effectiveness by making a fair
+comparison
+    - Participants are divided by chance into separate groups
+      - Treatment(s) group: receive a new treatment
+      - Placebo group: receive standard treatment
+    - Expensive, high failure rate, sometimes not safe
+      - Emulate the RCTs using real-world observation!
+  
+  - Emulate RCTs using real-world observation (For existing drugs)
+
+<center>![](figures/05.png)</center><br>
+<center>![](figures/06.png)</center><br>
+
+  - Challenge 1: Selection bias
+    - Potential outcomes model
+    - Propensity score
+    - Average treatment effect
+
+<center>![](figures/07.png)</center><br>  
+<center>![](figures/08.png)</center><br> 
+<center>![](figures/09.png)</center><br>
+<center>![](figures/10.png)</center><br>
+
+  - Challenge 2: Heterogeneity in treatment effect
+    - Double machine learning
+    - Meta learners
+    - Balanced representation learning
+    
+<center>![](figures/11.png)</center><br>
+  
+  - How to estimate the heterogeneous treatment effect?
+    - High-level steps
+      - Learn “nuisance” or “context” around feature X via regression
+      - Estimate the HTE by learning coefficient in semi-parametric structural equation model or imputing counterfactual outcomes
+      - Optionally weight the outcome estimate by propensity score
+    - Methods: double machine learning, meta learners, balanced representation learning, etc.
+  
+<center>![](figures/12.png)</center><br>
+
+  - Double Machine Learning (Chernozhukov 2016)
+  
+<center>![](figures/13.png)</center><br>
+  
+  - Meta learners
+  
+<center>![](figures/14.png)</center><br>
+<center>![](figures/15.png)</center><br>
+
+  - Balanced representation learning
+  
+<center>![](figures/16.png)</center><br>
+
+  - Methodology comparison
+
+<center>![](figures/17.png)</center><br>
+<center>![](figures/18.png)</center><br>  
+<center>![](figures/19.png)</center><br>  
+<center>![](figures/20.png)</center><br>  
+<center>![](figures/21.png)</center><br> 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
